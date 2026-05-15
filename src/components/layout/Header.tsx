@@ -69,12 +69,18 @@ const Header = () => {
             </Link>
           </div>
 
-          {/* Mobile Menu Button */}
-          <button
-            className="lg:hidden text-primary-foreground p-2"
-            onClick={() => setIsOpen(!isOpen)}
-            aria-label="Toggle menu"
-          >
+          {/* Mobile Actions + Menu Button */}
+          <div className="lg:hidden flex items-center gap-2">
+            <Link to="/login">
+              <Button variant="heroOutline" size="sm">
+                Login
+              </Button>
+            </Link>
+            <button
+              className="text-primary-foreground p-2"
+              onClick={() => setIsOpen(!isOpen)}
+              aria-label="Toggle menu"
+            >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
