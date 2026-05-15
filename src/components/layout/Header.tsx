@@ -82,7 +82,8 @@ const Header = () => {
               aria-label="Toggle menu"
             >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+            </button>
+          </div>
         </div>
       </div>
 
